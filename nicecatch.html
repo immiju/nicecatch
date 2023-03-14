@@ -1,0 +1,1080 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="반려묘 쇼핑 플랫폼">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="author" content="조미주">
+<title>나이스캣치</title>
+    
+<link rel="shortcut icon" href="img/icon.png"> <!--Android-->
+<link rel="apple-touch-icon" href="img/icon.png"> <!--Apple Ios-->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+<link rel="stylesheet" href="css/nicecatch.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="js/nicecatch.js"></script>
+</head>
+    
+<body>
+<div id="mo-menu">
+    <div class="mo-menu-tab-container">
+        <ul class="mo-menu-tabs">
+            <li><a href="#"><i class="fas fa-home"></i></a></li>
+            <li><a href="#"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fas fa-bell"></i></a></li>
+            <li><a href="#"><i class="fas fa-user-alt"></i></a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="mo-menu-sub-wrap">
+    <div class="mo-menu-sub bar">
+        <div class="mo-menu-nav">
+            <a href=""><i class="fas fa-chevron-left"></i></a>
+            <p>카테고리</p>
+        </div>
+        <div class="bar-tab-container">
+            <ul class="bar-tabs">
+                <li>사료</li>
+                <li>간식</li>
+                <li>용품</li>
+            </ul>
+        </div><!-- .bar-tab-container -->
+                  
+        <div class="bar-sub-category">      
+            <div class="bar-category">
+                <div class="bar-category-row">
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/01-kitten.png" alt="키튼사료"></div>
+                        <span class="category-name">키튼 <p>1세 미만</p></span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/02-adult.png" alt="어덜트사료"></div>
+                        <span class="category-name">어덜트 <p>1-7세</p></span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/03-senior.png" alt="시니어사료"></div>
+                        <span class="category-name">시니어 <p>7세 이상</p></span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/04-all.png" alt="전연령사료"></div>
+                        <span class="category-name">전연령</span>
+                    </a></div>
+                </div><!-- .category-row -->
+            
+                <div class="bar-category-row">
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/05-dryfeed.png" alt="건식사료"></div>
+                        <span class="category-name">건식사료</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/06-canfeed.png" alt="주식캔"></div>
+                        <span class="category-name">주식캔</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/07-pouchfeed.png" alt="파우치사료"></div>
+                        <span class="category-name">파우치</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/08-airfeed.png" alt="에어/동결사료"></div>
+                        <span class="category-name">에어/동결사료</span>
+                    </a></div>
+                </div><!-- .category-row -->
+            </div><!-- .category -->
+            
+            <div class="bar-category">
+                <div class="bar-category-row">
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/09-fouchsnack.png" alt="간식파우치"></div>
+                        <span class="category-name">간식파우치</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/10-cansnack.png" alt="간식캔"></div>
+                        <span class="category-name">간식캔</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/11-jerky.png" alt="저키"></div>
+                        <span class="category-name">저키</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/12-treet.png" alt="스낵"></div>
+                        <span class="category-name">스낵</span>
+                    </a></div>
+                </div><!-- .category-row -->
+            
+                <div class="bar-category-row">
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/13-sausage.png" alt="통살/소시지"></div>
+                        <span class="category-name">통살/소시지</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/14-grass.png" alt="캣닢/캣그라스"></div>
+                        <span class="category-name">캣닢/캣그라스</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/15-raw.png" alt="동결/건조"></div>
+                        <span class="category-name">동결/건조</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/16-dental.png" alt="덴탈/영양"></div>
+                        <span class="category-name">덴탈/영양</span>
+                    </a></div>
+                </div><!-- .category-row -->
+            </div><!-- .category -->
+        
+            <div class="bar-category">
+                <div class="bar-category-row">
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/17-toy.png" alt="장난감"></div>
+                        <span class="category-name">장난감</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/18-house.png" alt="하우스/스크래쳐"></div>
+                        <span class="category-name">하우스/스크래쳐</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/19-sand.png" alt="모래/화장실"></div>
+                        <span class="category-name">모래/화장실</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/20-bath.png" alt="목욕/미용"></div>
+                        <span class="category-name">목욕/미용</span>
+                    </a></div>
+                </div><!-- .category-row -->
+            
+                <div class="bar-category-row">
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/21-tower.png" alt="캣타워/캣휠"></div>
+                        <span class="category-name">캣타워/캣휠</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/22-waterer.png" alt="급수기/급식기"></div>
+                        <span class="category-name">급수기/급식기</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/23-clothes.png" alt="의류/악세서리"></div>
+                        <span class="category-name">의류/악세서리</span>
+                    </a></div>
+                    <div class="sub-category"><a href="#">
+                        <div class="category-img"><img src="img/24-bag.png" alt="이동장"></div>
+                        <span class="category-name">이동장</span>
+                    </a></div>
+                </div><!-- .category-row -->
+            </div><!-- .category -->
+        </div><!-- .category-wrap -->
+    </div> 
+                        
+    <div class="mo-menu-sub cart">
+        <div class="mo-menu-nav">
+            <a href=""><i class="fas fa-chevron-left"></i></a>
+            <p>장바구니</p>
+        </div>
+        <div class="mo-menu-cont">
+            <p>장바구니에 담긴 상품이 없습니다.</p>
+            <div class="recommend">
+               <a href="#">추천상품 보기</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="mo-menu-sub bell">
+        <div class="mo-menu-nav">
+            <a href=""><i class="fas fa-chevron-left"></i></a>
+            <p>알림</p>
+        </div>
+        <div class="bell login-box">
+            <p>가입하고 주문하면<br><b>오늘 출발!</b></p>
+            <div class="login-btn"><a href="#">로그인</a></div>
+            <div class="join-btn"><a href="#">회원가입</a></div>
+        </div>
+    </div>
+       
+    <div class="mo-menu-sub user">
+        <div class="mo-menu-nav">
+            <a href=""><i class="fas fa-chevron-left"></i></a>
+            <p>마이페이지</p>
+        </div>
+        <ul>
+            <li><a href="#">최근 본 상품<i class="fas fa-angle-right"></i></a></li>
+            <li><a href="#">주문 내역<i class="fas fa-angle-right"></i></a></li>
+            <li><a href="#">배송 조회<i class="fas fa-angle-right"></i></a></li>
+            <li><a href="#">고객 센터<i class="fas fa-angle-right"></i></a></li>
+        </ul>
+        <div class="login-box">
+            <p>가입하고 주문하면<br><b>오늘 출발!</b></p>
+            <div class="login-btn"><a href="#">로그인</a></div>
+            <div class="join-btn"><a href="#">회원가입</a></div>
+        </div>
+    </div>
+</div>
+
+<header>
+   <div class="notice-area">
+        <div class="notice-wrap">  
+           <ul class="notice">     
+                <li><i class="fas fa-bullhorn"></i>이번 주 할인전+기획전 모아보기</li>
+                <li><i class="fas fa-bullhorn"></i>펫푸드 2000종 최대 75% 인하</li>
+                <li><i class="fas fa-bullhorn"></i>지금 가입하면 인기상품 100원!</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="main-header">
+        <div class="inner-wrap">
+            <div class="header-top">
+                <h1 class="logo">NICE CATCH</h1>
+
+                <div class="serch-box">
+                     <input type="text" placeholder="어떤 상품을 찾으세요?">
+                     <a href="#"><i class="fas fa-search"></i></a>
+                </div>
+            </div>
+
+            <nav>
+                <ul id="gnb">
+                    <li><a href="#">핫딜</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">랭킹</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">체험단</a></li>
+                    <li><a href="#">집사 커뮤니티</a></li>
+                </ul><!-- #gnb -->
+            </nav>
+        </div><!-- inner wrap -->
+    </div><!-- main-header -->
+</header>
+    
+<div id="main-slide">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#">
+                <img src="img/main-slide-01.jpg">
+                <div class="slide-title">
+                    <p>1.25 - 2. 1</p>
+                    <p>망설이면 놓쳐요!<br>최대 75% 할인</p>
+                </div>
+            </a></div>
+            <div class="swiper-slide"><a href="#">
+                <img src="img/main-slide-02.jpg">
+                <div class="slide-title">
+                    <p>할인 쿠폰 적용</p>
+                    <p>신상 이동장<br>보러가기</p>
+                </div>
+            </a></div>
+            <div class="swiper-slide"><a href="#">
+                <img src="img/main-slide-03.jpg">
+                <div class="slide-title">
+                    <p>1.30 - 2. 5</p>
+                    <p>방석&amp;쿠션<br>최대 50% 할인</p>
+                </div>
+            </a></div>
+            <div class="swiper-slide"><a href="#">
+                <img src="img/main-slide-04.jpg">
+                <div class="slide-title">
+                    <p>오직 나캣에서만!</p>
+                    <p>냥품명품<br>단독 런칭 이벤트</p>
+                </div>
+            </a></div>
+            <div class="swiper-slide"><a href="#">
+                <img src="img/main-slide-05.jpg">
+                <div class="slide-title">
+                    <p>고양이 필수템</p>
+                    <p>스크래쳐<br>모아보기</p>
+                </div>
+            </a></div>
+        </div><!-- .swiper-wrapper -->
+        
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+    </div><!-- .swiper -->
+</div><!-- #main-slide -->
+
+<div id="sect-category">
+    <div class="tab-container">
+        <ul class="tabs">
+            <li>사료</li>
+            <li>간식</li>
+            <li>용품</li>
+        </ul>
+    </div><!-- .tab-container -->
+                  
+    <div class="category-wrap">      
+        <div class="category">
+            <div class="category-row">
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/01-kitten.png" alt="키튼사료"></div>
+                    <span class="category-name">키튼 <p>1세 미만</p></span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/02-adult.png" alt="어덜트사료"></div>
+                    <span class="category-name">어덜트 <p>1-7세</p></span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/03-senior.png" alt="시니어사료"></div>
+                    <span class="category-name">시니어 <p>7세 이상</p></span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/04-all.png" alt="전연령사료"></div>
+                    <span class="category-name">전연령</span>
+                </a></div>
+            </div><!-- .category-row -->
+            
+            <div class="category-row">
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/05-dryfeed.png" alt="건식사료"></div>
+                    <span class="category-name">건식사료</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/06-canfeed.png" alt="주식캔"></div>
+                    <span class="category-name">주식캔</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/07-pouchfeed.png" alt="파우치사료"></div>
+                    <span class="category-name">파우치</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/08-airfeed.png" alt="에어/동결사료"></div>
+                    <span class="category-name">에어/동결사료</span>
+                </a></div>
+            </div><!-- .category-row -->
+        </div><!-- .category -->
+            
+        <div class="category">
+            <div class="category-row">
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/09-fouchsnack.png" alt="간식파우치"></div>
+                    <span class="category-name">간식파우치</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/10-cansnack.png" alt="간식캔"></div>
+                    <span class="category-name">간식캔</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/11-jerky.png" alt="저키"></div>
+                    <span class="category-name">저키</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/12-treet.png" alt="스낵"></div>
+                    <span class="category-name">스낵</span>
+                </a></div>
+            </div><!-- .category-row -->
+            
+            <div class="category-row">
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/13-sausage.png" alt="통살/소시지"></div>
+                    <span class="category-name">통살/소시지</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/14-grass.png" alt="캣닢/캣그라스"></div>
+                    <span class="category-name">캣닢/캣그라스</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/15-raw.png" alt="동결/건조"></div>
+                    <span class="category-name">동결/건조</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/16-dental.png" alt="덴탈/영양"></div>
+                    <span class="category-name">덴탈/영양</span>
+                </a></div>
+            </div><!-- .category-row -->
+        </div><!-- .category -->
+        
+        <div class="category">
+            <div class="category-row">
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/17-toy.png" alt="장난감"></div>
+                    <span class="category-name">장난감</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/18-house.png" alt="하우스/스크래쳐"></div>
+                    <span class="category-name">하우스/스크래쳐</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/19-sand.png" alt="모래/화장실"></div>
+                    <span class="category-name">모래/화장실</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/20-bath.png" alt="목욕/미용"></div>
+                    <span class="category-name">목욕/미용</span>
+                </a></div>
+            </div><!-- .category-row -->
+            
+            <div class="category-row">
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/21-tower.png" alt="캣타워/캣휠"></div>
+                    <span class="category-name">캣타워/캣휠</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/22-waterer.png" alt="급수기/급식기"></div>
+                    <span class="category-name">급수기/급식기</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/23-clothes.png" alt="의류/악세서리"></div>
+                    <span class="category-name">의류/악세서리</span>
+                </a></div>
+                <div class="sub-category"><a href="#">
+                    <div class="category-img"><img src="img/24-bag.png" alt="이동장"></div>
+                    <span class="category-name">이동장</span>
+                </a></div>
+            </div><!-- .category-row -->
+        </div><!-- .category -->
+    </div><!-- .category-wrap --> 
+</div><!-- #sect-category --> 
+   
+<div id="sect-deal">
+    <div class="inner-wrap">
+        <div class="title-wrap">
+            <h2 class="sect-title">핫딜</h2>
+            <span class="more"><a href="#">더보기</a></span>
+        </div><!-- .title-wrap -->
+        
+        <div id="deal-cont-wrap">
+            <ul class="deal-cont">
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/deal-01.jpg">
+                        <div class="deal-date"><p>2일남음</p></div>
+                    </div>
+                    <div class="cont-txt">
+                        <h3>티키캣 애프터다크 치킨 &amp; 오리 캔 80g</h3>
+                        <p class="discount"><del>4,000원</del></p>
+                        <p><b>48%</b>2,100원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-quantity">20</span>
+                    </div>
+                </a></li><!-- #sect-deal .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/deal-02.jpg">
+                        <div class="deal-date"><p>2일남음</p></div>
+                    </div>
+                    <div class="cont-txt">
+                        <h3>페디슨 냥이 케어 칫솔</h3>
+                        <p class="discount"><del>5,000원</del></p>
+                        <p><b>46%</b>3,200원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="review-quantity">6</span>
+                    </div>
+                </a></li><!-- #sect-deal .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/deal-03.jpg">
+                        <div class="deal-date"><p>3일남음</p></div>
+                    </div>
+                    <div class="cont-txt">
+                        <h3>펫라이프 쥬쥬터널 그린</h3>
+                        <p class="discount"><del>12,000원</del></p>
+                        <p><b>37%</b>7,600원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-quantity">568</span>
+                    </div>
+                </a></li><!-- #sect-deal .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/deal-04.jpg">
+                        <div class="deal-date"><p>3일남음</p></div>
+                    </div>
+                    <div class="cont-txt">
+                        <h3>꿈쟁이 캣그라스 냥이친구 밀</h3>
+                        <p class="discount"><del>4,000원</del></p>
+                        <p><b>43%</b>2,300원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-quantity">100</span>
+                    </div>
+                </a></li><!-- #sect-deal .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/deal-05.jpeg">
+                        <div class="deal-date"><p>4일남음</p></div>
+                    </div>
+                    <div class="cont-txt">
+                        <h3>힐링타임 롱롱스틱 밍크날개</h3>
+                        <p class="discount"><del>4,200원</del></p>
+                        <p><b>22%</b>3,300원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">64</span>
+                    </div>
+                </a></li><!-- #sect-deal .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/deal-06.jpeg">
+                        <div class="deal-date"><p>5일남음</p></div>
+                    </div>
+                    <div class="cont-txt">
+                        <h3>반려소반 쓰담스틱 닭가슴살 5개입</h3>
+                        <p class="discount"><del>6,000원</del></p>
+                        <p><b>23%</b>4,600원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">36</span>
+                    </div>
+                </a></li><!-- #sect-deal .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/deal-07.jpeg">
+                        <div class="deal-date"><p>5일남음</p></div>
+                    </div>
+                    <div class="cont-txt">
+                        <h3>펫모닝 플라이 잠자리&amp;나비</h3>
+                        <p class="discount"><del>10,000원</del></p>
+                        <p><b>32%</b>6,800원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-quantity">266</span>
+                    </div>
+                </a></li><!-- #sect-deal .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/deal-08.jpeg">
+                        <div class="deal-date"><p>5일남음</p></div>
+                    </div>
+                    <div class="cont-txt">
+                        <h3>도기맨 허니스마일 마사지 브러쉬 NHS-79</h3>
+                        <p class="discount"><del>7,000원</del></p>
+                        <p><b>47%</b>3,700원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-quantity">2,991</span>
+                    </div>
+                </a></li><!-- #sect-deal .cont > li -->
+            </ul><!-- .cont -->
+        </div><!-- .cont-wrap -->
+        <div id="deal-prev" class="cont-btn"><i class="fas fa-chevron-left"></i></div>
+        <div id="deal-next" class="cont-btn"><i class="fas fa-chevron-right"></i></div>
+    </div><!-- #sect-deal > .inner-wrap -->
+</div><!-- #sect-deal -->
+
+<div id="sect-new"> 
+<div class="inner-wrap">
+        <div class="title-wrap">
+            <h2 class="sect-title">신상품</h2>
+            <span class="more"><a href="#">더보기</a></span>
+        </div><!-- .title-wrap -->
+        
+        <div id="new-cont-wrap">
+            <ul class="new-cont">
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/new-01.png">
+                    </div>
+                    <div class="cont-txt">
+                        <h3>기그위 낚시대 러버핸드 리얼패더 플러쉬</h3>
+                        <p>8,000원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">5</span>
+                    </div>
+                </a></li><!-- #sect-new .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/new-02.png">
+                    </div>
+                    <div class="cont-txt">
+                        <h3>도트캣 스크래쳐 L클래스 900</h3>
+                        <p>27,000원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="review-quantity">3</span>
+                    </div>
+                </a></li><!-- #sect-new .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/new-03.jpg">
+                    </div>
+                    <div class="cont-txt">
+                        <h3>매일야옹 스타박스 밀크하우스 숨숨집</h3>
+                        <p class="discount"><del>33,000원</del></p>
+                        <p><b>22%</b>25,900원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">2</span>
+                    </div>
+                </a></li><!-- #sect-new .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/new-04.png">
+                    </div>
+                    <div class="cont-txt">
+                        <h3>템테이션 믹스업 닭&amp;연어&amp;체다치즈맛 160g</h3>
+                        <p class="discount"><del>8,000원</del></p>
+                        <p><b>23%</b>6,200원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">27</span>
+                    </div>
+                </a></li><!-- #sect-new .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/new-05.jpeg">
+                    </div>
+                    <div class="cont-txt">
+                        <h3>고스비 프레스코 칠면조&amp;햄 70g</h3>
+                        <p class="discount"><del>2,500원</del></p>
+                        <p><b>12%</b>2,200원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">16</span>
+                    </div>
+                </a></li><!-- #sect-deal .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/new-06.jpeg">
+                    </div>
+                    <div class="cont-txt">
+                        <h3>퓨리테일 캠프사이트 대형 화장실</h3>
+                        <p class="discount"><del>42,800원</del></p>
+                        <p><b>7%</b>39,800원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">6</span>
+                    </div>
+                </a></li><!-- #sect-deal .cont > li -->
+                
+                <li><a href="#">
+                    <div class="cont-img">
+                        <img src="img/new-07.jpeg">
+                    </div>
+                    <div class="cont-txt">
+                        <h3>스튜디오얼라이브 일루 브러쉬</h3>
+                        <p>20,000원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        <span class="review-quantity">6</span>
+                    </div>
+                </a></li><!-- #sect-deal .new > li -->
+            </ul><!-- .cont -->
+        </div><!-- .cont-wrap -->
+        <div id="new-prev" class="cont-btn"><i class="fas fa-chevron-left"></i></div>
+        <div id="new-next" class="cont-btn"><i class="fas fa-chevron-right"></i></div>
+    </div><!-- #sect-new > .inner-wrap -->
+</div> <!-- #sect-new -->
+
+<div id="sect-ranking">
+    <div class="inner-wrap">
+        <div class="title-wrap">
+            <h2 class="sect-title">나캣랭킹</h2>
+            <span class="rank-time">2023.01.21 16:01 기준</span>
+        </div><!-- .title-wrap -->
+    </div><!-- .inner-wrap -->
+    <ul class="rank-wrap">
+        <li>
+            <div class="rank-cont">
+                <div class="rank-title">
+                    <a href=""><h3><b>1</b>이나바 챠오 츄르 닭가슴살&amp;해산물 믹스맛 20개입</h3></a>
+                    <span class="fas fa-angle-down"></span>
+                </div><!-- .rank-detail-info -->
+                <div class="rank-detail-info">  
+                    <div class="rank-img"><img src="img/rank-01.jpeg"></div>
+                    <div class="cont-txt">
+                        <p class="discount"><del>20,000원</del></p>
+                        <p><b>38%</b>12,500원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">4,091</span>
+                    </div><!-- .rank-txt -->
+                </div><!-- .rank-detail-info -->
+            </div><!-- .rank-cont -->
+        </li><!-- .rank-wrap > li -->
+            
+        <li>
+            <div class="rank-cont">
+               <div class="rank-title">
+                    <a href=""><h3><b>2</b>로얄캐닌 인도어 4kg 변냄새 감소</h3></a>
+                    <span class="fas fa-angle-down"></span>
+                </div><!-- .rank-detail-info -->
+                <div class="rank-detail-info">  
+                    <div class="rank-img"><img src="img/rank-02.png"></div>
+                    <div class="cont-txt">
+                        <p class="discount"><del>72,000원</del></p>
+                        <p><b>20%</b>58,000원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">9,640</span>
+                    </div><!-- .rank-txt -->
+                </div><!-- .rank-detail-info -->
+            </div><!-- .rank-cont -->
+        </li><!-- .rank-wrap > li -->
+            
+        <li>
+            <div class="rank-cont">
+                <div class="rank-title">
+                    <a href=""><h3><b>3</b>츄통령 바삭츄 동결건조 닭가슴살 대용량 100g</h3></a>
+                    <span class="fas fa-angle-down"></span>
+                </div><!-- .rank-detail-info -->
+                <div class="rank-detail-info">   
+                    <div class="rank-img"><img src="img/rank-03.png"></div>
+                    <div class="cont-txt">
+                        <p class="discount"><del>14,900원</del></p>
+                        <p><b>20%</b>11,900원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">351</span>
+                    </div><!-- .rank-txt -->
+                </div><!-- .rank-detail-info -->
+            </div><!-- .rank-cont -->
+        </li><!-- .rank-wrap > li -->
+            
+        <li>
+            <div class="rank-cont">
+                <div class="rank-title">
+                    <a href=""><h3><b>4</b>캐츠룸 더스트프리 프리미엄 벤토나이트 무향 6.5kg</h3></a>   
+                    <span class="fas fa-angle-down"></span>
+                </div><!-- .rank-detail-info -->
+                <div class="rank-detail-info">    
+                    <div class="rank-img"><img src="img/rank-04.jpeg"></div>
+                    <div class="cont-txt">
+                        <p class="discount"><del>20,900원</del></p>
+                        <p><b>38%</b>12,900원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-quantity">430</span>
+                    </div><!-- .rank-txt -->
+                </div>
+            </div><!-- .rank-cont -->
+        </li><!-- .rank-wrap > li -->
+            
+        <li>
+            <div class="rank-cont">
+                <div class="rank-title">
+                    <a href=""><h3><b>5</b>에버크린 ES UN 19kg</h3></a>
+                    <span class="fas fa-angle-down"></span>
+                </div><!-- .rank-detail-info -->     
+                <div class="rank-detail-info">
+                    <div class="rank-img"><img src="img/rank-05.jpeg"></div>
+                    <div class="cont-txt">
+                        <p class="discount"><del>46,000원</del></p>
+                        <p><b>17%</b>38,000원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">4,974</span>
+                    </div><!-- .rank-txt -->
+                </div><!-- rank-detail-info -->
+            </div><!-- .rank-cont -->
+        </li><!-- .rank-wrap > li -->
+            
+        <li>
+            <div class="rank-cont">
+                <div class="rank-title">
+                    <a href=""><h3><b>6</b>에프디트릿 순살닭고기 250g</h3></a>
+                    <span class="fas fa-angle-down"></span>
+                </div><!-- .rank-detail-info -->   
+                <div class="rank-detail-info">
+                    <div class="rank-img"><img src="img/rank-06.jpeg"></div>
+                    <div class="cont-txt">
+                        <p class="discount"><del>19,000원</del></p>
+                        <p><b>5%</b>18,000원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">1,893</span>
+                    </div><!-- .rank-txt -->
+                </div><!-- .rank-detail-info -->
+            </div><!-- .rank-cont -->
+        </li><!-- .rank-wrap > li -->
+            
+        <li>
+            <div class="rank-cont">
+                <div class="rank-title">
+                    <a href=""><h3><b>7</b>그리니즈 필라인 덴탈 트릿 닭고기맛 130g</h3></a>  
+                    <span class="fas fa-angle-down"></span>
+                </div><!-- .rank-detail-info -->
+                <div class="rank-detail-info">  
+                    <div class="rank-img"><img src="img/rank-07.jpeg"></div>
+                    <div class="cont-txt">
+                        <p class="discount"><del>9,800원</del></p>
+                        <p><b>13%</b>8,500원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">4,099</span>
+                    </div><!-- .rank-txt -->
+                </div><!-- .rank-detail-info -->
+            </div><!-- .rank-cont -->
+        </li><!-- .rank-wrap > li -->
+            
+        <li>
+            <div class="rank-cont">
+                <div class="rank-title">
+                    <a href=""><h3><b>8</b>캣토리 모래 무향 5L</h3></a> 
+                    <span class="fas fa-angle-down"></span>
+                </div><!-- .rank-detail-info -->    
+                <div class="rank-detail-info">
+                    <div class="rank-img"><img src="img/rank-08.jpeg"></div>
+                    <div class="cont-txt">
+                        <p class="discount"><del>4,500원</del></p>
+                        <p><b>16%</b>3,800원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-quantity">11,607</span>
+                    </div><!-- .rank-txt -->
+                </div><!-- .rank-detail-info -->
+            </div><!-- .rank-cont -->
+        </li><!-- .rank-wrap > li -->
+            
+        <li>
+            <div class="rank-cont">
+                <div class="rank-title">
+                    <a href=""><h3><b>9</b>인트라젠 플러스 종합영양제 분말형 30개입</h3></a>
+                    <span class="fas fa-angle-down"></span>
+                </div><!-- .rank-detail-info -->   
+                <div class="rank-detail-info">
+                    <div class="rank-img"><img src="img/rank-09.jpeg"></div>
+                    <div class="cont-txt">
+                        <p class="discount"><del>12,000원</del></p>
+                        <p><b>21%</b>9,500원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </span>
+                        <span class="review-quantity">12,318</span>
+                    </div><!-- .rank-txt -->
+                </div><!-- .rank-detail-info -->
+            </div><!-- .rank-cont -->
+        </li><!-- .rank-wrap > li -->
+            
+        <li>
+            <div class="rank-cont">
+                <div class="rank-title">
+                    <a href=""><h3><b>10</b>캐츠랑 저요저요 닭고기 60g</h3></a>   
+                    <span class="fas fa-angle-down"></span>
+                </div><!-- .rank-detail-info -->
+                <div class="rank-detail-info">
+                    <div class="rank-img"><img src="img/rank-10.jpeg"></div>
+                    <div class="cont-txt">
+                        <p class="discount"><del>2,900원</del></p>
+                        <p><b>48%</b>1,500원</p>
+                        <span class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </span>
+                        <span class="review-quantity">972</span>
+                    </div><!-- .rank-txt -->
+                </div><!-- .rank-detail-info -->
+            </div><!-- .rank-cont -->
+        </li><!-- .rank-wrap > li -->
+    </ul><!-- .rank-wrap -->
+</div><!-- #sect-ranking -->
+    
+<div id="sect-community">
+   <div class="inner-wrap">
+        <div class="title-wrap">
+                <h2 class="sect-title">집사 커뮤니티</h2>
+            <span class="more"><a href="#">더보기</a></span>
+        </div><!-- .title-wrap -->
+
+        <div class="content"><a href="">
+            <div class="comm-img"><img src="img/comm-01.jpeg"></div>
+            <div class="comm-title">
+                <h3>츄르로 고양이 교육하기!<p>천재고양이</p></h3>
+                <p>조회수 75</p>
+            </div>
+        </a></div><!-- .content -->
+        <div class="content"><a href="">
+            <div class="comm-img"><img src="img/comm-02.jpeg"></div>
+            <div class="comm-title">
+                <h3>뚱냥이 체중관리 꿀팁<p>구름이엄마</p></h3>
+                <p>조회수 45</p>
+            </div>
+        </a></div><!-- .content -->
+        <div class="content"><a href="">
+            <div class="comm-img"><img src="img/comm-03.jpeg"></div>
+            <div class="comm-title">
+                <h3>화장실 전체갈이 어떻게 하시나요?<p>모래사장</p></h3>
+                <p>조회수 10</p>
+            </div>
+        </a></div><!-- .content -->
+        <div class="content"><a href="">
+            <div class="comm-img"><img src="img/comm-04.jpeg"></div>
+            <div class="comm-title">
+                <h3>고양이 기침 왜하는걸까요ㅠ<p>가위바위보</p></h3>
+                <p>조회수 38</p>
+            </div>
+        </a></div><!-- .content -->
+    </div><!-- .inner-wrap -->
+</div><!-- #sect-community -->
+   
+<div id="banner">
+    <ul>
+        <li>신선한 사료와 간식 <b>유통기한 책임제</b></li>
+        <li>오후 3시 이전 주문<b>당일 도착</b></li>
+        <li>3만원 이상 구매 시 <b>무료 배송</b></li>
+    </ul>
+</div> 
+
+<footer>
+    <div class="inner-wrap">
+        <div class="footer-logo"></div>
+        <ul class="sns">
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+        </ul>
+        <ul class="footer-link">
+            <li><a href="">회사 소개</a></li>
+            <li><a href=""><b>개인정보처리방침</b></a></li>
+            <li><a href="">이용약관</a></li>
+            <li><a href="">제휴 입점 및 문의</a></li>
+            <li><a href="">사업자 정보</a></li>
+        </ul>
+        <address class="footer-info">
+            <p><b>대표자</b>이민정</p>
+            <p><b>사업자등록번호</b>178-93-23455</p>
+            <p><b>주소</b>서울특별시 강남구 삼성로 394 삼진빌딩 3층</p>
+            <p><b>통신판매업</b>제 2018-서울강남-29355호</p>
+            <p><b>개인정보보호책임자</b>김진성</p>
+            <p><b>Fax</b>02-345-6789</p>
+            <p><b>Tel</b>1588-2394</p>
+            <p><b>E-mail</b><a href="mailto:master@nicecatch.com">master@nicecatch.com</a></p>
+        </address>
+    </div>
+</footer>      
+ 
+</body>
+</html>
